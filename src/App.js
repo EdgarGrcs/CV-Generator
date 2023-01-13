@@ -1,4 +1,8 @@
-import './App.css';
+import React,{Component} from "react";
+import CvComp from "./components/CvComp";
+import Header from "./components/Header";
+import "./styles/App.css";
+
 
 
 /**
@@ -9,11 +13,30 @@ import './App.css';
  */
 
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+
+class App extends Component{
+
+constructor(){
+  super();
+
 }
+
+
+render(){
+
+return(
+  <div className="window">
+   
+    <CvComp></CvComp>
+  </div>
+);
+
+}
+
+
+}
+
+
+
 
 export default App;
